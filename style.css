@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.custom-slider {
+  /*background-color: orange;*/
+  width: 120px;
+  appearance: none;
+}
+
+.custom-slider:focus{
+  outline: none;
+}
+
+.custom-slider::-webkit-slider-runnable-track {
+  background: #dcdcdc;
+  height: 3px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+
+  /*
+  background-image: url('sun-slider.png');
+  background-size: 100% auto;
+  */
+
+  background: #ff9000;
+  cursor: pointer;
+  
+  border-radius: 50%;
+  margin-top: -3px;
+  
+}
+
+.custom-select{
+  width: 130px;
+  font-size: 12px;
+}
