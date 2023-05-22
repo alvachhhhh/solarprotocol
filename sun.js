@@ -57,7 +57,7 @@ function gotData(data) {
     batteryPercentage = newbatteryPercentage;
 
 
-    print(batteryPercentage);
+    //print(batteryPercentage);
 
     //saturationSlider.value(saturationValue);
     //updateSaturation();
