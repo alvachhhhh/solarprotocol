@@ -26,8 +26,6 @@ let thirdLine;
 
 let sliderPositionX;
 
-let dataLoaded = false;
-
 
 
 
@@ -36,15 +34,13 @@ let dataLoaded = false;
 function preload() {
   sunTexture = loadImage('assets/sun-2.jpeg');
   font = loadFont('assets/font.ttf');
-
-  dataLoaded = true;
   
 }
 
 function updateSaturationFromJSON() {
   let jsonURL = 'https://server.solarpowerforartists.com/api/v2/opendata.php?value=battery-percentage';
-  let jsonURL2 = 'https://solarprotocol.net/api/v2/opendata.php?systemInfo=dump';
-  let jsonURL3 = 'https://solarprotocol.net/api/v2/opendata.php?value=datetime';
+  let jsonURL2 = 'http://solarprotocol.net/api/v2/opendata.php?systemInfo=dump';
+  let jsonURL3 = 'http://solarprotocol.net/api/v2/opendata.php?value=datetime';
   loadJSON(jsonURL, gotData);
   loadJSON(jsonURL2, gotVData);
   loadJSON(jsonURL3, gotCData);
@@ -100,16 +96,12 @@ function setup() {
   setTimeout(startAnimation, 1000);
 
   sliderPositionX = width / 2;
-
-  frameRate(30);
   
 
   
 }
 
 function draw() {
-
-  
   background(0);
 
   textureMode(NORMAL);
