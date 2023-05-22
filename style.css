@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 canvas {
   display: block;
@@ -46,3 +47,60 @@ canvas {
   width: 130px;
   font-size: 12px;
 }
+
+/*button*/
+.slider-button {
+
+  position:absolute;
+  display: inline-block;
+  
+  bottom: 35px;
+  left: 18px;
+  width: 35px;
+  height: 15px;
+  background-color: #ffc478;
+  border-radius: 7.5px;
+  
+  
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* 鼠标悬停时的样式 */
+.slider-button:hover {
+  background-color: #000000;
+}
+
+/* 空心圆样式 */
+.slider-button::after {
+  content: "";
+  position: absolute;
+  top: 2.0px;
+  left: 2.0px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ff9000;
+  border-radius: 50%;
+  transition: left 0.3s;
+  
+}
+
+/* 点击后按钮滑到左边的样式 */
+.slider-button.checked::after {
+  left: 19px;
+}
+
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  text-align: center;
+  padding-top: 20%;
+  color:#ffffff;
+  font-size: 20px;
+}
+
