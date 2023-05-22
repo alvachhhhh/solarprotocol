@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    display: block;
+  }
+  
+  #text-container h1{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: #fa9000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 34px;
+    font-weight:800;
+    letter-spacing: 0.1em;
+  }
+  
+  #text-container h2{
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 14px;
+    font-weight:500;
+  }
+  
+  #text-container h3{
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    color: #fa9000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 90px;
+    font-weight:900;
+  }
+  
+  
+  
+  /*service information*/
+  
+  #text-container h4{
+    position: absolute;
+    top: 600px;
+    left: 100px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 14px;
+    font-weight:500;
+  }
+  
+  
+  
+  /*information*/
+  
+  /*server*/
+  #text-container h8{
+    position: absolute;
+    top: 650px;
+    left: 100px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 10px;
+    font-weight:100;
+  }
+  
+  
+  #text-container h5{
+    position: absolute;
+    top: 655px;
+    left: 100px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 10px;
+    font-weight:100;
+  }
+  
+  #text-container h6{
+    position: absolute;
+    top: 670px;
+    left: 100px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 10px;
+    font-weight:100;
+  }
+  
+  #text-container h7{
+    position: absolute;
+    top: 715px;
+    left: 100px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 10px;
+    font-weight:100;
+  }
+  
+  
+  /*datetime*/
+  #text-container p{
+    position: absolute;
+    top: 510px;
+    left: 100px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 10px;
+    font-weight:100;
+  }
+
+
+  /*button*/
+.slider-button {
+
+    position:absolute;
+    display: inline-block;
+    
+    bottom: 35px;
+    left: 18px;
+    width: 35px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 7.5px;
+    
+    
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 9999;
+  }
+  
+  /* 鼠标悬停时的样式 */
+  .slider-button:hover {
+    background-color: #ff9000;
+  }
+  
+  /* 空心圆样式 */
+  .slider-button::after {
+    content: "";
+    position: absolute;
+    top: 2.0px;
+    left: 19px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #3e3e3e;
+    border-radius: 50%;
+    transition: left 0.3s;
+    
+  }
+  
+  /* 点击后按钮滑到左边的样式 */
+  .slider-button.checked::after {
+    left: 3px;
+  }
+  
+  
+  
+  
+  
