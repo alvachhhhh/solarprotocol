@@ -11,9 +11,14 @@ let yOffset;
 let durationSlider;
 let apiUrl = 'https://server.solarpowerforartists.com/api/v2/opendata.php?value=PV-current&duration=4';
 
+let isDragging = false;
+
+
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+
 
 
   // create slider-1-duration
@@ -120,6 +125,7 @@ function draw() {
     drawData(datetime, dataV);
   }
   
+
 }
 
 
@@ -282,3 +288,18 @@ function drawAxes(){
     line(0 + xMargin, height - yMargin, 0 + xMargin, 0 + yMargin); // y axis
     line(0 + xMargin, height - yMargin, width - xMargin, height - yMargin); //x axis
 }
+
+
+
+function toggleSlider(button) {
+  button.classList.toggle("checked");
+
+  if (button.classList.contains("checked")) {
+    //window.open("battery.html", "_blank");
+    location.href = "battery.html";
+  } else {
+    //window.location.href = "index.html";
+    location.href = "index.html";
+  }
+}
+
