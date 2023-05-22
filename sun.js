@@ -145,7 +145,7 @@ function draw() {
 
   let thirdLine = document.createElement('h3');
 
-    const percentage = (batteryPercentage * 100);  
+    const percentage = Math.round(batteryPercentage * 100);  
     const formattedPercentage = `${percentage}%`;
     thirdLine.innerText = formattedPercentage;
     textContainer.appendChild(thirdLine);
