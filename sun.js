@@ -1,5 +1,5 @@
 let data;
-let dataTime;
+//let dataTime;
 
 let angle = 0;
 let sunRadius = 120;
@@ -39,11 +39,11 @@ function preload() {
 
 function updateSaturationFromJSON() {
   let jsonURL = 'https://server.solarpowerforartists.com/api/v2/opendata.php?value=battery-percentage';
-  let jsonURL2 = 'http://solarprotocol.net/api/v2/opendata.php?systemInfo=dump';
-  let jsonURL3 = 'http://solarprotocol.net/api/v2/opendata.php?value=datetime';
+  //let jsonURL2 = 'http://solarprotocol.net/api/v2/opendata.php?systemInfo=dump';
+  //let jsonURL3 = 'http://solarprotocol.net/api/v2/opendata.php?value=datetime';
   loadJSON(jsonURL, gotData);
-  loadJSON(jsonURL2, gotVData);
-  loadJSON(jsonURL3, gotCData);
+  //loadJSON(jsonURL2, gotVData);
+  //loadJSON(jsonURL3, gotCData);
 }
 
 
@@ -64,7 +64,7 @@ function gotData(data) {
   }
 
 
-
+/*
 function gotVData(jsonData) {
   data = jsonData;
 }
@@ -75,7 +75,7 @@ function gotCData(jsonData) {
   data2 = jsonData;
 }
 
-
+*/
 
 
 
