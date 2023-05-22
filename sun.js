@@ -26,6 +26,8 @@ let thirdLine;
 
 let sliderPositionX;
 
+let dataLoaded = false;
+
 
 
 
@@ -34,6 +36,8 @@ let sliderPositionX;
 function preload() {
   sunTexture = loadImage('assets/sun-2.jpeg');
   font = loadFont('assets/font.ttf');
+
+  dataLoaded = true;
   
 }
 
@@ -96,7 +100,7 @@ function setup() {
   setTimeout(startAnimation, 1000);
 
   sliderPositionX = width / 2;
-  
+
   frameRate(30);
   
 
@@ -104,6 +108,8 @@ function setup() {
 }
 
 function draw() {
+
+  
   background(0);
 
   textureMode(NORMAL);
@@ -172,7 +178,7 @@ function draw() {
   let ninethLine = document.createElement('p');
   
 
- // if (data) {
+  if (data) {
 
   let dump = data.dump;
 
@@ -189,12 +195,12 @@ function draw() {
   sevenLine.innerText = newCountry;
   eightLine.innerText = newServer;
   } 
-/*  else {
+  else {
     fifthLine.innerText = LoadData;
     sixthLine.innerText = LoadData;
     sevenLine.innerText = LoadData;
     eightLine.innerText = LoadData;
-  */  
+    
   }
   textContainer.appendChild(fifthLine);
   textContainer.appendChild(sixthLine);
@@ -203,13 +209,13 @@ function draw() {
 
   ////data time
 
-//  if(data2){
+  if(data2){
     const dateTimeArray = data2.datetime.split('.')
     dataTime =  dateTimeArray[0];
     ninethLine.innerText = 'Update:   '+ dataTime;
-//  }else{
-//    ninethLine.innerText = LoadData;
-//  }
+  }else{
+    ninethLine.innerText = LoadData;
+  }
   
   textContainer.appendChild(ninethLine);
 
