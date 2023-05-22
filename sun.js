@@ -97,6 +97,8 @@ function setup() {
 
   sliderPositionX = width / 2;
   
+  frameRate(30);
+  
 
   
 }
