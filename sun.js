@@ -150,7 +150,7 @@ function draw() {
     thirdLine.innerText = formattedPercentage;
     textContainer.appendChild(thirdLine);
 
-
+/*
   //Service Information
   
 
@@ -211,7 +211,7 @@ function draw() {
   
   textContainer.appendChild(ninethLine);
 
-
+*/
 
 
   
