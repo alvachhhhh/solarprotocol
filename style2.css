@@ -129,12 +129,12 @@ html, body {
     z-index: 9999;
   }
   
-  /* 鼠标悬停时的样式 */
+
   .slider-button:hover {
     background-color: #ff9000;
   }
   
-  /* 空心圆样式 */
+
   .slider-button::after {
     content: "";
     position: absolute;
@@ -148,7 +148,7 @@ html, body {
     
   }
   
-  /* 点击后按钮滑到左边的样式 */
+
   .slider-button.checked::after {
     left: 3px;
   }
