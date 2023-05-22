@@ -39,8 +39,8 @@ function preload() {
 
 function updateSaturationFromJSON() {
   let jsonURL = 'https://server.solarpowerforartists.com/api/v2/opendata.php?value=battery-percentage';
-  let jsonURL2 = 'http://solarprotocol.net/api/v2/opendata.php?systemInfo=dump';
-  let jsonURL3 = 'http://solarprotocol.net/api/v2/opendata.php?value=datetime';
+  let jsonURL2 = 'https://solarprotocol.net/api/v2/opendata.php?systemInfo=dump';
+  let jsonURL3 = 'https://solarprotocol.net/api/v2/opendata.php?value=datetime';
   loadJSON(jsonURL, gotData);
   loadJSON(jsonURL2, gotVData);
   loadJSON(jsonURL3, gotCData);
