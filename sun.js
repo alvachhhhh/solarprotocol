@@ -146,7 +146,7 @@ function draw() {
   let thirdLine = document.createElement('h3');
 
     const percentage = Math.round(batteryPercentage * 100);  
-    const formattedPercentage = `${percentage}%`;
+    const formattedPercentage = percentage + '%';
     thirdLine.innerText = formattedPercentage;
     textContainer.appendChild(thirdLine);
 
@@ -256,11 +256,13 @@ function updateSaturation() {
     //full canvas
     let canvas = document.getElementsByTagName('canvas')[0];
     canvas.style.filter = `saturate(${saturation * 100}%)`;
+    
+
   }
 
 
   function startAnimation() {
-    // 设置动画参数
+ 
     progress = 0;
     animationSpeed = 0.01;
     animationInProgress = true;
