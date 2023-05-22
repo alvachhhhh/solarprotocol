@@ -66,12 +66,11 @@ canvas {
   transition: background-color 0.3s;
 }
 
-/* 鼠标悬停时的样式 */
+
 .slider-button:hover {
   background-color: #000000;
 }
 
-/* 空心圆样式 */
 .slider-button::after {
   content: "";
   position: absolute;
@@ -85,7 +84,7 @@ canvas {
   
 }
 
-/* 点击后按钮滑到左边的样式 */
+
 .slider-button.checked::after {
   left: 19px;
 }
