@@ -121,7 +121,7 @@ html, body {
     left: 18px;
     width: 35px;
     height: 15px;
-    background-color: #ffffff;
+    background-color: #ff9000;
     border-radius: 7.5px;
     
     
@@ -131,7 +131,7 @@ html, body {
   }
   
   .slider-button:hover {
-    background-color: #ff9000;
+    background-color: #ffc478;
   }
   
   .slider-button::after {
